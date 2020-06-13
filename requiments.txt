@@ -1,0 +1,9 @@
+gunicorn
+flask
+flask-cors
+flask-restful
+flask_sqlalchemy
+os
+sqlalchemy
+pandas
+
