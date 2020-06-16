@@ -18,16 +18,34 @@
     
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Map of Taxi Drop Off Locations</h2>
-                    <div id="plot"></div>
+                    <h2>Taxi Pick Up and Drop Off Locations</h2>
+                    <div id="sankey"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Payment Type and Tips</h2>
+                    <div id="bar graph"></div>
                 </div>
             </div>
     
-            <div class="row">
-                <div class="col-md-12">
-                    <h2><a href="/send">Further Graphs on Taxi Trends</a></h2>
+
+            <div class="well">
+                <h5>Location Filter:</h5>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+              </div>
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Trip Stats</h3>
                 </div>
+                <div id="bar" class="panel-body"></div>
+              </div>
             </div>
+
+
+           
         </div>
 
     </body>
