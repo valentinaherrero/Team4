@@ -53,6 +53,14 @@ def zones():
     data=df.to_json(orient="records")
     return  {'results': json.loads(data)}
 
+#what about filtered zone data? new route needed?
+# How to get mode for payment type 
+# @app.route('/tripmetadata')
+# def tripmetadata():
+#     df=pd.read_sql_query(f"SELECT AVG(passenger_count,fare_amount,tip_amount,trip_distance) FROM pridedata", engine)
+#     data=df.to_json(orient="records")
+#     return  {'results': json.loads(data)}
+
 
 
 

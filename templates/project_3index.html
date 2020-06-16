@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <title>Taxi Pride!!</title>
         <link rel="stylesheet" href="/static/css/style.css">
@@ -83,19 +84,19 @@
                 </div>
             </div>
     
-
+          <div class="col-md-2">
             <div class="well">
-                <h5>Drop off zone Filter:</h5>
+                <h5>Drop off zone:</h5>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
-              </div>
+            </div>
 
               <div class="panel panel-primary">
                 <div class="panel-heading">
                   <h3 class="panel-title">Trip Stats</h3>
                 </div>
-                <div id="bar" class="panel-body"></div>
+                <div id="trip-metadata" class="panel-body"></div>
               </div>
-            </div>        
+          </div>      
             
             <!-- Footer -->
             <footer id="team" class="bg-black small text-center text-white-50">
@@ -105,6 +106,7 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
         <!-- <script src="static/js/update.js"></script> -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js">
         <script src="static/js/app.js"></script>
     </body>
 
