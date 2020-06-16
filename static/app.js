@@ -1,9 +1,9 @@
 function populateDropDown() {
     distinctList=[]
-    fetch('https://pridetrip.herokuapp.com/pridedata?length=100').then(data=>data.json()).then(d=>{
+    fetch('https://pridetrip.herokuapp.com/zones').then(data=>data.json()).then(d=>{
     d.results.forEach(n=>{
         o = document.createElement("option")
-        o.text = n
+        o.text = n.dozone
         document.getElementById('selDataset').add(o)
     })
     
@@ -11,26 +11,12 @@ function populateDropDown() {
 
 populateDropDown();
 
-distinctList=[]
-fetch('https://pridetrip.herokuapp.com/priorwkdata?length=50').then(d=>d.json()).then(data => {
-    data.results.forEach(dd => {
-    if (distinctList.includes(dd.dozone)){}
-    else {
-            distinctList.push(dd.dozone);
-    }
-    if (distinctList.includes(dd.pkzone)){}
-    else {
-        distinctList.push(dd.pkzone);}
-    });
-    console.log(distinctList)
-});
 
 
 
 
 
-          
-        
+
 
 
 
