@@ -6,23 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/jstat@1.9.3/dist/jstat.min.js"></script>
+        <script src=“https://cdn.jsdelivr.net/npm/jstat@1.9.3/dist/jstat.min.js”></script>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <title>Taxi Pride!!</title>
         <link rel="stylesheet" href="/static/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round"rel="stylesheet"/>
+        <link
+        href="https://fonts.googleapis.com/css?family=Varela+Round"rel="stylesheet"/>
       <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet"/>
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="pridebar.js"></script>
+        <script src="/static/js/pridebar.js"></script>
     </head>
 
-    <body>    
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"> 
+    <body>
+           <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"> 
             <div class="container">
-              <a class="navbar-brand js-scroll-trigger" href="project_3index.html"
+              <a class="navbar-brand js-scroll-trigger" href="#about"
                 >Introduction</a
               > 
             </nav>
@@ -37,9 +38,6 @@
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">2019 TAXI PRIDE TRIPS</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">
-           Fun facts about post pride parade yellow cab rides
-          </h2>
         </div>
       </div>
     </header>
@@ -56,9 +54,9 @@
           <div class="col-lg-12 md-auto">
             <h2 class="text-white mb-4">About This Project</h2>
             <p class="text-white-50">
-              
-              An exciting event during June in NYC is be the pride parade. 
-              Inspired by a project on NYC Open Data, we sought to find the post-pride parade hotspots, traffic ,impact on local business
+              A brief articulation of your chosen topic and rationale 
+              The most exciting thing of this month in NYC would be the pride parade. 
+              Inspired by a project on NYC open data, we want to find the post-pride parade hotspots, traffic ,impact on local business
               by using yellow NYC taxi data of Sunday June 30th, 2019.           
             </p>
           </div>
@@ -80,11 +78,12 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Drop Off Zone Tips</h2>
-                    <div id="svg-area"></div> 
-                </div>
-            </div>
+              <div class="col-md-12">
+                  <h2>Average Tip Amount per Drop Off Zone</h2>
+                  <div id=“pridewk”></div>
+                  <div id=“priorwk”></div>
+              </div>
+          </div>
     
           <div class="col-md-2">
             <div class="well">
@@ -100,14 +99,17 @@
               </div>
           </div>      
             
+
+        </div>
             <!-- Footer -->
             <footer id="team" class="bg-black small text-center text-white-50">
               <div class="container">Copyright © Nisha, Sebastian, Star, Valentina, Ying</div>
             </footer>
-                  
-        </div>
+                          
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
         <script src="/static/js/app.js"></script>
+        
     </body>
 
     </html>
