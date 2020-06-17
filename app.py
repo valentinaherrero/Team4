@@ -24,6 +24,9 @@ def index():
     """Return the homepage."""
     return render_template("/project_3index.html")
 
+
+    
+
 @app.route('/priorwkdata')
 def priorwkdata():
     length = request.args.get('length', None)
